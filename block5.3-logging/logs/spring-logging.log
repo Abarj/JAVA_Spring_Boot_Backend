@@ -1,0 +1,16 @@
+2023-06-16 11:14:31,426 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-16 11:16:28,776 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-16 11:19:34,903 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-16 11:22:20,504 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-16 11:22:33,922 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-16 11:23:31,995 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-16 11:24:03,401 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-19 12:20:35,161 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-19 12:21:47,508 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-19 12:28:25,206 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-19 12:29:07,806 [main] WARN  c.e.b.Block5LoggingApplication - ->Este es un mensaje de advertencia
+2023-06-19 12:29:07,810 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-19 12:30:23,811 [main] WARN  c.e.b.Block5LoggingApplication - ->Este es un mensaje de advertencia
+2023-06-19 12:30:23,816 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error
+2023-06-19 13:29:57,903 [main] WARN  c.e.b.Block5LoggingApplication - ->Este es un mensaje de advertencia
+2023-06-19 13:29:57,908 [main] ERROR c.e.b.Block5LoggingApplication - -> Este es un mensaje de error

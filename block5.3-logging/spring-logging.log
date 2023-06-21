@@ -1,0 +1,2 @@
+2023-06-15T13:09:10.165+02:00 ERROR 8592 --- [main] c.e.b.Block5LoggingApplication           : Este es un mensaje de error
+2023-06-15T16:54:37.858+02:00 ERROR 3064 --- [main] c.e.b.Block5LoggingApplication           : -> Este es un mensaje de error
