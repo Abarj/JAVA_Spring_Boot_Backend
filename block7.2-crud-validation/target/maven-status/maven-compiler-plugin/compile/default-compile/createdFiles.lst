@@ -1,9 +1,0 @@
-com\example\block7CrudValidation\persona\application\PersonaRepository.class
-com\example\block7CrudValidation\exceptions\CreateUserException.class
-com\example\block7CrudValidation\persona\application\PersonServiceImpl.class
-com\example\block7CrudValidation\persona\domain\Persona.class
-com\example\block7CrudValidation\persona\infrastructure\PersonaController.class
-com\example\block7CrudValidation\Block7CrudValidationApplication.class
-com\example\block7CrudValidation\persona\infrastructure\DtoPersona.class
-com\example\block7CrudValidation\persona\application\PersonaService.class
-com\example\block7CrudValidation\persona\config\ModelMapperConfiguration.class
