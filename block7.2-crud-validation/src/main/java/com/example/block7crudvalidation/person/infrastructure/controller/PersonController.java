@@ -1,0 +1,49 @@
+package com.example.block7crudvalidation.person.infrastructure.controller;
+
+import com.example.block7crudvalidation.person.application.PersonService;
+import com.example.block7crudvalidation.person.infrastructure.dto.input.PersonInputDTO;
+import com.example.block7crudvalidation.person.infrastructure.dto.output.PersonOutputDTO;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
+
+@RestController
+@RequestMapping("/person")
+public class PersonController {
+
+    @Autowired
+    PersonService personService;
+
+    @PostMapping
+    public PersonOutputDTO addPerson(@Valid @RequestBody PersonInputDTO personInputDTO) {
+        return personService.addPerson(personInputDTO);
+    }
+
+    @GetMapping
+    public List<PersonOutputDTO> getPersons() {
+        return personService.getPersons();
+    }
+
+    @GetMapping("/{id}")
+    public PersonOutputDTO getPersonId(@PathVariable("id") String id) {
+        return personService.getPersonId(id);
+    }
+
+    @GetMapping("/name/{name}")
+    public List<PersonOutputDTO> getPersonName(@PathVariable("name") String username) throws Exception {
+        return personService.getPersonName(username);
+    }
+
+    @PutMapping("/{id}")
+    public PersonOutputDTO updatePerson(@PathVariable("id") String id, @RequestBody PersonInputDTO personInputDTO) {
+        return personService.updatePerson(id, personInputDTO);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deletePerson(@PathVariable("id") String id) {
+        personService.deletePerson(id);
+    }
+}
