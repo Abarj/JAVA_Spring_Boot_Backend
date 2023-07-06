@@ -21,11 +21,6 @@ public class SubjectController {
         return subjectService.addSubject(subjectInputDTO);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteSubject(@PathVariable("id") Integer id) {
-        subjectService.deleteSubject(id);
-    }
-
     @GetMapping
     public List<SubjectOutputDTO> getAllSubjects() {
         return subjectService.getAllSubjects();
@@ -45,5 +40,10 @@ public class SubjectController {
     public SubjectOutputDTO updateSubject(@PathVariable("id") Integer id,
                                         @RequestBody SubjectInputDTO subjectInputDTO) {
         return subjectService.updateSubject(id, subjectInputDTO);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteSubject(@PathVariable("id") Integer id) {
+        subjectService.deleteSubject(id);
     }
 }

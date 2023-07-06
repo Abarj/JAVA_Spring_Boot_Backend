@@ -1,13 +1,11 @@
 package com.example.block7crudvalidation.subject.domain;
 
-import com.example.block7crudvalidation.student.infrastructure.dto.input.StudentInputDTO;
 import com.example.block7crudvalidation.teacher.domain.Teacher;
 import com.example.block7crudvalidation.student.domain.Student;
 import com.example.block7crudvalidation.subject.infrastructure.dto.input.SubjectInputDTO;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 
 import java.util.ArrayList;
 import java.util.Date;

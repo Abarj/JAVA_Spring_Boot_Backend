@@ -11,7 +11,11 @@ import com.example.block7crudvalidation.student.infrastructure.dto.output.Studen
 import com.example.block7crudvalidation.teacher.domain.Teacher;
 import com.example.block7crudvalidation.teacher.infrastructure.dto.output.TeacherOutputDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +25,9 @@ public class PersonServiceImpl implements PersonService {
 
     @Autowired
     PersonRepository personRepository;
+
+    @Autowired
+    RestTemplate restTemplate;
 
     @Override
     public PersonOutputDTO addPerson(PersonInputDTO personInputDTO) {
@@ -113,5 +120,22 @@ public class PersonServiceImpl implements PersonService {
         Person person = personRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("No se ha encontrado ningún username con el id: " + id));
         personRepository.delete(person);
+    }
+
+    @Override
+    public TeacherOutputDTO getTeacher(Integer id) {
+        String url = "http://localhost:8081/teacher/" + id;
+
+        try{
+            ResponseEntity<TeacherOutputDTO> response = restTemplate.exchange(url, HttpMethod.GET, null, TeacherOutputDTO.class);
+            if (response.getStatusCode() == HttpStatus.OK) {
+                return response.getBody();
+            } else {
+                return new TeacherOutputDTO();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

@@ -1,7 +1,5 @@
 package com.example.block7crudvalidation.exception;
 
-import com.example.block7crudvalidation.exception.CustomError;
-
 import java.util.Calendar;
 
 public class UnprocessableEntityException extends Exception {

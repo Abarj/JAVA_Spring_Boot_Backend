@@ -1,6 +1,5 @@
 package com.example.block7crudvalidation.subject.application;
 
-
 import com.example.block7crudvalidation.student.domain.Student;
 import com.example.block7crudvalidation.student.infrastructure.repository.StudentRepository;
 import com.example.block7crudvalidation.subject.domain.Subject;

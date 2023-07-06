@@ -8,7 +8,6 @@ import com.example.block7crudvalidation.teacher.infrastructure.dto.input.Teacher
 import jakarta.persistence.*;
 import lombok.*;
 
-
 import java.util.List;
 
 @Entity

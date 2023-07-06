@@ -1,6 +1,5 @@
 package com.example.block7crudvalidation.subject.infrastructure.dto.input;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

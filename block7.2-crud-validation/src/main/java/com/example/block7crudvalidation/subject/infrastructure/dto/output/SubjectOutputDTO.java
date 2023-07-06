@@ -1,10 +1,8 @@
 package com.example.block7crudvalidation.subject.infrastructure.dto.output;
 
-
 import com.example.block7crudvalidation.subject.domain.Subject;
 import com.example.block7crudvalidation.student.domain.Student;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

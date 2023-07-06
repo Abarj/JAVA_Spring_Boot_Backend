@@ -6,7 +6,6 @@ import com.example.block7crudvalidation.teacher.domain.Teacher;
 import jakarta.persistence.*;
 import lombok.*;
 
-
 import java.util.Date;
 
 @Entity

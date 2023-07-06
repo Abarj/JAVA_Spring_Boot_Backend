@@ -2,7 +2,6 @@ package com.example.block7crudvalidation.teacher.application;
 
 import com.example.block7crudvalidation.teacher.infrastructure.dto.input.TeacherInputDTO;
 import com.example.block7crudvalidation.teacher.infrastructure.dto.output.TeacherOutputDTO;
-import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 

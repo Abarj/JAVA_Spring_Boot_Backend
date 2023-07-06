@@ -5,6 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0c5ee9-935b-460c-a187-1e41e886f383" name="Changes" comment="Bug personRepository">
+      <change afterPath="$PROJECT_DIR$/../block10-dockerize-app/src/main/java/com/example/block7crud/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/persona/Block7CrudApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/block7crudvalidation/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/block7crudvalidation/config/feign/TeacherFeign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/persona/domain/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/PersonaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/persona/infrastructure/controller/PersonaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/PersonaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/persona/infrastructure/repository/PersonaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/PersonaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/persona/application/PersonaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/PersonaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/persona/application/PersonaServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
@@ -51,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/alvaro.fbarjau/IdeaProjects/block7.2-crud-validation",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager" selected="Application.block7-crud-validation8080">

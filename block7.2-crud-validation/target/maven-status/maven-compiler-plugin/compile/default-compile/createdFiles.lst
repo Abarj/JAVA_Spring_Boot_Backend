@@ -4,6 +4,7 @@ com\example\block7crudvalidation\person\infrastructure\repository\PersonReposito
 com\example\block7crudvalidation\subject\infrastructure\repository\SubjectRepository.class
 com\example\block7crudvalidation\person\application\PersonService.class
 com\example\block7crudvalidation\student\domain\Student.class
+com\example\block7crudvalidation\config\feign\TeacherFeign.class
 com\example\block7crudvalidation\person\infrastructure\dto\input\PersonInputDTO.class
 com\example\block7crudvalidation\teacher\application\TeacherService.class
 com\example\block7crudvalidation\teacher\infrastructure\controller\TeacherController.class
@@ -25,6 +26,7 @@ com\example\block7crudvalidation\student\infrastructure\repository\StudentReposi
 com\example\block7crudvalidation\exception\CreateUserException.class
 com\example\block7crudvalidation\student\application\StudentService.class
 com\example\block7crudvalidation\teacher\infrastructure\dto\input\TeacherInputDTO.class
+com\example\block7crudvalidation\config\RestTemplateConfig.class
 com\example\block7crudvalidation\person\infrastructure\dto\output\PersonStudentDTO.class
 com\example\block7crudvalidation\subject\domain\Subject.class
 com\example\block7crudvalidation\Block7CrudValidationApplication.class

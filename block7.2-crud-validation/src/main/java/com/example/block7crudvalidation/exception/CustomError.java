@@ -10,7 +10,10 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CustomError {
+
     private Date timestamp;
+
     private int HTTPcode;
+
     private String message;
 }

@@ -1,6 +1,5 @@
 package com.example.block7crudvalidation.subject.application;
 
-
 import com.example.block7crudvalidation.subject.infrastructure.dto.input.SubjectInputDTO;
 import com.example.block7crudvalidation.subject.infrastructure.dto.output.SubjectOutputDTO;
 import org.springframework.stereotype.Service;

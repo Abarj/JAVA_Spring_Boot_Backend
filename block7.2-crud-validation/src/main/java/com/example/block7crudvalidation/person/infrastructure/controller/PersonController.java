@@ -1,12 +1,12 @@
 package com.example.block7crudvalidation.person.infrastructure.controller;
 
+import com.example.block7crudvalidation.config.feign.TeacherFeign;
 import com.example.block7crudvalidation.person.application.PersonService;
 import com.example.block7crudvalidation.person.infrastructure.dto.input.PersonInputDTO;
 import com.example.block7crudvalidation.person.infrastructure.dto.output.PersonOutputDTO;
-
+import com.example.block7crudvalidation.teacher.infrastructure.dto.output.TeacherOutputDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -18,6 +18,9 @@ public class PersonController {
 
     @Autowired
     PersonService personService;
+
+    @Autowired
+    TeacherFeign teacherFeign;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
@@ -38,6 +41,20 @@ public class PersonController {
     @GetMapping("/name/{name}")
     public List<PersonOutputDTO> getPersonName(@PathVariable("name") String name, @RequestParam(value = "outputType", defaultValue = "simple") String outputType) throws Exception {
         return personService.getPersonName(name, outputType);
+    }
+
+    // RestTemplate a 8081
+    @GetMapping("/teacher/{id}")
+    public TeacherOutputDTO getTeacher(@PathVariable Integer id) {
+        return personService.getTeacher(id);
+
+    }
+
+    // Feign a 8081
+    @GetMapping("/teacher/feign/{id}")
+    public TeacherOutputDTO getTeacherFeign(@PathVariable Integer id) {
+        return teacherFeign.getTeacher(id);
+
     }
 
     @PutMapping("/{id}")

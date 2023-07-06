@@ -24,6 +24,11 @@ public class StudentController {
         return studentService.addStudent(studentInputDTO);
     }
 
+    @GetMapping
+    public List<StudentOutputDTO> getAllStudents(@RequestParam(name = "outputType", defaultValue = "simple") String outputType) {
+        return studentService.getAllStudents(outputType);
+    }
+
     @GetMapping("/{id}")
     public StudentOutputDTO getStudentId(@PathVariable(name = "id") Integer id,
                                          @RequestParam(name = "outputType", defaultValue = "simple") String outputType) {
@@ -32,11 +37,6 @@ public class StudentController {
         } else {
             return new StudentOutputDTO(studentService.getStudentId(id));
         }
-    }
-
-    @GetMapping
-    public List<StudentOutputDTO> getAllStudents(@RequestParam(name = "outputType", defaultValue = "simple") String outputType) {
-        return studentService.getAllStudents(outputType);
     }
 
     @PutMapping("/{id}")
