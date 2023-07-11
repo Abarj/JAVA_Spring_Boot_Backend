@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="822398be-d250-4204-9055-a91354e3abd9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/domain/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/PersonaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/infrastructure/controller/PersonaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/PersonaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/infrastructure/repository/PersonaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/PersonaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/application/PersonaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/PersonaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../block7-crud/src/main/java/com/example/block7crud/application/PersonaServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2S9snbGjC2ygSaPTyoXd4DUp7kb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/alvaro.fbarjau/Desktop/JavaTraining/block5.3-logging"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="822398be-d250-4204-9055-a91354e3abd9" name="Changes" comment="" />
+      <created>1688570299432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688570299432</updated>
+    </task>
+    <servers />
+  </component>
+</project>

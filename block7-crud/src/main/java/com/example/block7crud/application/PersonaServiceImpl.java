@@ -1,7 +1,8 @@
-package com.example.block7crud;
+package com.example.block7crud.application;
 
+import com.example.block7crud.application.PersonaService;
 import org.springframework.stereotype.Service;
-import com.example.block7crud.Persona;
+import com.example.block7crud.domain.Persona;
 
 import java.util.ArrayList;
 import java.util.List;

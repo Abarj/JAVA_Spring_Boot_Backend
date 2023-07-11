@@ -1,7 +1,6 @@
-package com.example.block7crud;
-import com.example.block7crud.Block7CrudApplication;
+package com.example.block7crud.application;
 
-import com.example.block7crud.Persona;
+import com.example.block7crud.domain.Persona;
 import java.util.Optional;
 
 public interface PersonaService {

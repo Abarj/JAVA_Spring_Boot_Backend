@@ -1,5 +1,7 @@
-package com.example.block7crud;
+package com.example.block7crud.infrastructure.controller;
 
+import com.example.block7crud.application.PersonaService;
+import com.example.block7crud.domain.Persona;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

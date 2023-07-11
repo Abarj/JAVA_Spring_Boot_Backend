@@ -1,0 +1,6 @@
+com\example\block7crud\application\PersonaService.class
+com\example\block7crud\infrastructure\controller\PersonaController.class
+com\example\block7crud\domain\Persona.class
+com\example\block7crud\application\PersonaServiceImpl.class
+com\example\block7crud\Block7CrudApplication.class
+com\example\block7crud\infrastructure\repository\PersonaRepository.class

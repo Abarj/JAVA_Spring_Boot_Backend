@@ -1,4 +1,4 @@
-package com.example.block7crud;
+package com.example.block7crud.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
