@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f0c5ee9-935b-460c-a187-1e41e886f383" name="Changes" comment="Bug personRepository" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RuybBjOclqsXOyDC4ERhxNSQz1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alvaro.fbarjau/IdeaProjects/block13-JUnit-Testing-avanzado&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.PersonControllerTest">
+    <configuration name="block7-crud-validation8080" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.Block7CrudValidationApplication" />
+      <module name="block7-crud-validation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="block7-crud-validation8081" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.Block7CrudValidationApplication" />
+      <module name="block7-crud-validation" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8081" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block7-crud-validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block7crudvalidation.infrastructure.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block7-crud-validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block7crudvalidation.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.application" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.application.PersonServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block7-crud-validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block7crudvalidation.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.application" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.application.StudentServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubjectServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block7-crud-validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block7crudvalidation.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.application" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.application.SubjectServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block7-crud-validation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.block7crudvalidation.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.application" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.application.TeacherServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.block7-crud-validation8080" />
+      <item itemvalue="Application.block7-crud-validation8081" />
+      <item itemvalue="JUnit.StudentServiceImplTest" />
+      <item itemvalue="JUnit.SubjectServiceImplTest" />
+      <item itemvalue="JUnit.TeacherServiceImplTest" />
+      <item itemvalue="JUnit.PersonControllerTest" />
+      <item itemvalue="JUnit.PersonServiceImplTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PersonControllerTest" />
+        <item itemvalue="JUnit.PersonServiceImplTest" />
+        <item itemvalue="JUnit.SubjectServiceImplTest" />
+        <item itemvalue="JUnit.TeacherServiceImplTest" />
+        <item itemvalue="JUnit.StudentServiceImplTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f0c5ee9-935b-460c-a187-1e41e886f383" name="Changes" comment="" />
+      <created>1688114330505</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688114330505</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Bug personRepository">
+      <created>1688455793177</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688455793177</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bug personRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug personRepository" />
+  </component>
+</project>
