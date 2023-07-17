@@ -42,11 +42,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alvaro.fbarjau/IdeaProjects/block13-JUnit-Testing-avanzado&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alvaro.fbarjau/IdeaProjects/block7.2-crud-validation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.PersonControllerTest">
+  <component name="RunManager" selected="Application.block7-crud-validation8080">
     <configuration name="block7-crud-validation8080" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.Block7CrudValidationApplication" />
       <module name="block7-crud-validation" />
@@ -77,62 +77,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonControllerTest.testDeletePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block7-crud-validation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.block7crudvalidation.application.*" />
+          <option name="PATTERN" value="com.example.block7crudvalidation.infrastructure.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.application" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.application.PersonServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
+      <option name="METHOD_NAME" value="testDeletePerson" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonControllerTest.testGetPersonName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block7-crud-validation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.block7crudvalidation.application.*" />
+          <option name="PATTERN" value="com.example.block7crudvalidation.infrastructure.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.application" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.application.StudentServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
+      <option name="METHOD_NAME" value="testGetPersonName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubjectServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonControllerTest.testGetPersons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block7-crud-validation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.block7crudvalidation.application.*" />
+          <option name="PATTERN" value="com.example.block7crudvalidation.infrastructure.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.application" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.application.SubjectServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
+      <option name="METHOD_NAME" value="testGetPersons" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonControllerTest.updatePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block7-crud-validation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.block7crudvalidation.application.*" />
+          <option name="PATTERN" value="com.example.block7crudvalidation.infrastructure.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.application" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.application.TeacherServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
+      <option name="METHOD_NAME" value="updatePerson" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +144,19 @@
     <list>
       <item itemvalue="Application.block7-crud-validation8080" />
       <item itemvalue="Application.block7-crud-validation8081" />
-      <item itemvalue="JUnit.StudentServiceImplTest" />
-      <item itemvalue="JUnit.SubjectServiceImplTest" />
-      <item itemvalue="JUnit.TeacherServiceImplTest" />
+      <item itemvalue="JUnit.PersonControllerTest.testDeletePerson" />
+      <item itemvalue="JUnit.PersonControllerTest.testGetPersonName" />
+      <item itemvalue="JUnit.PersonControllerTest.testGetPersons" />
+      <item itemvalue="JUnit.PersonControllerTest.updatePerson" />
       <item itemvalue="JUnit.PersonControllerTest" />
-      <item itemvalue="JUnit.PersonServiceImplTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PersonControllerTest" />
-        <item itemvalue="JUnit.PersonServiceImplTest" />
-        <item itemvalue="JUnit.SubjectServiceImplTest" />
-        <item itemvalue="JUnit.TeacherServiceImplTest" />
-        <item itemvalue="JUnit.StudentServiceImplTest" />
+        <item itemvalue="JUnit.PersonControllerTest.testGetPersons" />
+        <item itemvalue="JUnit.PersonControllerTest.testDeletePerson" />
+        <item itemvalue="JUnit.PersonControllerTest.updatePerson" />
+        <item itemvalue="JUnit.PersonControllerTest.testGetPersonName" />
       </list>
     </recent_temporary>
   </component>
@@ -189,5 +193,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bug personRepository" />
     <option name="LAST_COMMIT_MESSAGE" value="Bug personRepository" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/block7crudvalidation/infrastructure/controller/PersonControllerTest.java</url>
+          <line>160</line>
+          <properties class="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" method="testDeletePerson">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
