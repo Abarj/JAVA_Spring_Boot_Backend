@@ -1,0 +1,11 @@
+
+~
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "customError".(¦ÀÓóıÿÿÿÿ
+b
+java:S1223
+"LRename this method to prevent any misunderstanding or make it a constructor.(„€Âò
+c	java:S100
+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„€Âò
+I
+java:S1172
+"3Remove this unused method parameter "errorMessage".(„€Âò

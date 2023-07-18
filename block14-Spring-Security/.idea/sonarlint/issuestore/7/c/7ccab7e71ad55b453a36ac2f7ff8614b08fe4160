@@ -1,0 +1,9 @@
+
+g	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(Ô’Šéúÿÿÿÿ8şìèŸ–1
+b	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(”¼÷É8ÿìèŸ–1
+€
+java:S1488]"^Immediately return this expression instead of assigning it to the temporary variable "people".(İîí¢úÿÿÿÿ8íèŸ–1
+
+java:S1130-"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ô’Šéúÿÿÿÿ8ªíèŸ–1
+‰
+java:S11302"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(”¼÷É8«íèŸ–1
