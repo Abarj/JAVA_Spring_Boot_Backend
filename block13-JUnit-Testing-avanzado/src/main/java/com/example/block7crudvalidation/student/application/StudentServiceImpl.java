@@ -127,4 +127,15 @@ public class StudentServiceImpl implements StudentService {
 
         return new StudentOutputDTO(student);
     }
+
+    @Override
+    public StudentOutputDTO getStudentById(Integer idStudent) {
+        Student student = studentRepository.findById(idStudent)
+                .orElseThrow(() -> new RuntimeException("No se ha encontrado al estudiante con el ID: " + idStudent));
+        return new StudentOutputDTO(student);
+    }
+
+    public void deleteAllStudents() {
+        studentRepository.deleteAll();
+    }
 }

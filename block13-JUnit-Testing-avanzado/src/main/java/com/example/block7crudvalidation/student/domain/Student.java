@@ -39,7 +39,7 @@ public class Student {
     @Column
     String branch;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Subject> subjects;
 
     public Student(StudentInputDTO studentInputDTO) {

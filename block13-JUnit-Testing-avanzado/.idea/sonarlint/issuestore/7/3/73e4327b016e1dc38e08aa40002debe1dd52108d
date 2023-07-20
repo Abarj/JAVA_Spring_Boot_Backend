@@ -1,0 +1,6 @@
+
+`	java:S112Z"FDefine and throw a dedicated exception instead of using a generic one.(‹Ûú·şÿÿÿÿ
+„
+java:S1192d"nDefine a constant instead of duplicating this literal "No se ha encontrado al estudiante con el ID: " 3 times.(„ÅªÕ
+h
+java:S6204M"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(™§‡

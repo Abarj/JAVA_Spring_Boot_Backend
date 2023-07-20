@@ -23,7 +23,7 @@ public class Subject {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer idSubject;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_teacher")
     private Teacher teacher;
 

@@ -1,10 +1,14 @@
 package com.example.block7crudvalidation.application;
 
+import com.example.block7crudvalidation.domain.subject.domain.SubjectMother;
+import com.example.block7crudvalidation.domain.teacher.domain.TeacherMother;
 import com.example.block7crudvalidation.person.domain.Person;
+import com.example.block7crudvalidation.domain.person.domain.PersonMother;
 import com.example.block7crudvalidation.person.infrastructure.repository.PersonRepository;
 import com.example.block7crudvalidation.student.application.StudentServiceImpl;
 import com.example.block7crudvalidation.student.domain.Student;
 import com.example.block7crudvalidation.student.infrastructure.dto.input.StudentInputDTO;
+import com.example.block7crudvalidation.infrastructure.dto.input.StudentInputDTOMother;
 import com.example.block7crudvalidation.student.infrastructure.dto.output.StudentOutputDTO;
 import com.example.block7crudvalidation.student.infrastructure.repository.StudentRepository;
 import com.example.block7crudvalidation.subject.domain.Subject;
@@ -51,37 +55,21 @@ class StudentServiceImplTest {
     @Test
     void testAddStudent() {
         // Setup
-        StudentInputDTO studentInputDTO = new StudentInputDTO();
+        StudentInputDTO studentInputDTO = StudentInputDTOMother.mockStudentDTO();
+        Person person = PersonMother.mockPerson(1, "abarj", "Alvaro", "alvaro@email.com");
+        Teacher teacher = TeacherMother.mockTeacher(1, "Comentarios", "Rama");
+
         studentInputDTO.setIdPerson(1);
-        studentInputDTO.setIdTeacher(2);
-        studentInputDTO.setNumHoursWeek(10);
-        studentInputDTO.setComments("Aprobado");
-        studentInputDTO.setBranch("Matematicas");
+        studentInputDTO.setIdTeacher(1);
 
-        Person person = new Person();
-        person.setIdPerson(1);
-        person.setName("Alvaro");
-
-        Teacher teacher = new Teacher();
-        teacher.setIdTeacher(2);
-        teacher.setBranch("Matematicas");
+        Subject subject1 = SubjectMother.mockSubject(1, "Inglés", "Comentarios");
+        Subject subject2 = SubjectMother.mockSubject(2, "Historia", "Comentarios");
+        Subject subject3 = SubjectMother.mockSubject(3, "Ciencias", "Comentarios");
 
         List<Integer> subjectIds = new ArrayList<>();
+        subjectIds.add(1);
+        subjectIds.add(2);
         subjectIds.add(3);
-        subjectIds.add(4);
-        subjectIds.add(5);
-
-        Subject subject1 = new Subject();
-        subject1.setIdSubject(3);
-        subject1.setName("Matematicas");
-
-        Subject subject2 = new Subject();
-        subject2.setIdSubject(4);
-        subject2.setName("Historia");
-
-        Subject subject3 = new Subject();
-        subject3.setIdSubject(5);
-        subject3.setName("Lengua");
 
         List<Subject> subjects = new ArrayList<>();
         subjects.add(subject1);
@@ -89,7 +77,7 @@ class StudentServiceImplTest {
         subjects.add(subject3);
 
         when(personRepository.findById(1)).thenReturn(Optional.of(person));
-        when(teacherRepository.findById(2)).thenReturn(Optional.of(teacher));
+        when(teacherRepository.findById(1)).thenReturn(Optional.of(teacher));
         //when(subjectRepository.findAllById(anyList())).thenReturn(subjects);
 
         // Execute
@@ -98,14 +86,14 @@ class StudentServiceImplTest {
         // Verify
         //assertEquals(1, result.getIdStudent());
         assertEquals(1, result.getIdPerson());
-        assertEquals(2, result.getIdTeacher());
+        assertEquals(1, result.getIdTeacher());
         //assertEquals(10, result.getNumHoursWeek());
-        assertEquals("Aprobado", result.getComments());
-        //assertEquals("Matematicas", result.getBranch());
+        assertEquals("Comentarios", result.getComments());
+        //assertEquals("Rama", result.getBranch());
         //assertEquals(subjectIds, result.getSubjects());
 
         verify(personRepository, times(1)).findById(1);
-        verify(teacherRepository, times(1)).findById(2);
+        verify(teacherRepository, times(1)).findById(1);
         //verify(subjectRepository, times(1)).findAllById(anyList());
         verify(studentRepository, times(1)).save(any(Student.class));
     }

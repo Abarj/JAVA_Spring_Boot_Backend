@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.61 s - in com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.944 s - in com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest

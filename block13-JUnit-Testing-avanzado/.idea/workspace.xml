@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -38,15 +39,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alvaro.fbarjau/IdeaProjects/block7.2-crud-validation&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/alvaro.fbarjau/IdeaProjects/block15-kafka/block15-kafka-producer",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Application.block7-crud-validation8080">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.block7crudvalidation.subject.infrastructure.dto.input" />
+      <recent name="com.example.block7crudvalidation.subject.domain" />
+      <recent name="com.example.block7crudvalidation.teacher.domain" />
+      <recent name="com.example.block7crudvalidation.teacher.infrastructure.dto.input" />
+      <recent name="com.example.block7crudvalidation.student.infrastructure.dto.input" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TeacherControllerTest">
     <configuration name="block7-crud-validation8080" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.Block7CrudValidationApplication" />
       <module name="block7-crud-validation" />
@@ -62,7 +77,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in block7-crud-validation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="block7-crud-validation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block7-crud-validation" />
       <extension name="coverage">
         <pattern>
@@ -71,13 +94,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonControllerTest.testDeletePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentControllerTest.addStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block7-crud-validation" />
       <extension name="coverage">
         <pattern>
@@ -86,14 +109,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
-      <option name="METHOD_NAME" value="testDeletePerson" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest" />
+      <option name="METHOD_NAME" value="addStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonControllerTest.testGetPersonName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block7-crud-validation" />
       <extension name="coverage">
         <pattern>
@@ -102,14 +125,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
-      <option name="METHOD_NAME" value="testGetPersonName" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonControllerTest.testGetPersons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherControllerTest.deleteTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="block7-crud-validation" />
       <extension name="coverage">
         <pattern>
@@ -118,24 +140,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
-      <option name="METHOD_NAME" value="testGetPersons" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonControllerTest.updatePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="block7-crud-validation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.block7crudvalidation.infrastructure.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.block7crudvalidation.infrastructure.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.PersonControllerTest" />
-      <option name="METHOD_NAME" value="updatePerson" />
+      <option name="MAIN_CLASS_NAME" value="com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest" />
+      <option name="METHOD_NAME" value="deleteTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,19 +150,19 @@
     <list>
       <item itemvalue="Application.block7-crud-validation8080" />
       <item itemvalue="Application.block7-crud-validation8081" />
-      <item itemvalue="JUnit.PersonControllerTest.testDeletePerson" />
-      <item itemvalue="JUnit.PersonControllerTest.testGetPersonName" />
-      <item itemvalue="JUnit.PersonControllerTest.testGetPersons" />
-      <item itemvalue="JUnit.PersonControllerTest.updatePerson" />
-      <item itemvalue="JUnit.PersonControllerTest" />
+      <item itemvalue="JUnit.StudentControllerTest" />
+      <item itemvalue="JUnit.StudentControllerTest.addStudent" />
+      <item itemvalue="JUnit.TeacherControllerTest" />
+      <item itemvalue="JUnit.TeacherControllerTest.deleteTeacher" />
+      <item itemvalue="JUnit.All in block7-crud-validation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PersonControllerTest" />
-        <item itemvalue="JUnit.PersonControllerTest.testGetPersons" />
-        <item itemvalue="JUnit.PersonControllerTest.testDeletePerson" />
-        <item itemvalue="JUnit.PersonControllerTest.updatePerson" />
-        <item itemvalue="JUnit.PersonControllerTest.testGetPersonName" />
+        <item itemvalue="JUnit.TeacherControllerTest" />
+        <item itemvalue="JUnit.StudentControllerTest" />
+        <item itemvalue="JUnit.StudentControllerTest.addStudent" />
+        <item itemvalue="JUnit.All in block7-crud-validation" />
+        <item itemvalue="JUnit.TeacherControllerTest.deleteTeacher" />
       </list>
     </recent_temporary>
   </component>
@@ -208,5 +214,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/block13_JUnit_Testing_avanzado$application_in_block7_crud_validation.ic" NAME="application in block7-crud-validation Coverage Results" MODIFIED="1689677525659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/block13_JUnit_Testing_avanzado$All_in_block7_crud_validation__1_.ic" NAME="All in block7-crud-validation (1) Coverage Results" MODIFIED="1689754133275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/block13_JUnit_Testing_avanzado$All_in_block7_crud_validation.ic" NAME="All in block7-crud-validation Coverage Results" MODIFIED="1689755145837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -42,7 +42,7 @@ class PersonControllerTest {
         personRepository.deleteAll();
     }
 
-    Person setUp() {
+    private Person setUp() {
         Person person = new Person();
         person.setIdPerson(1);
         person.setUsername("Abarj");

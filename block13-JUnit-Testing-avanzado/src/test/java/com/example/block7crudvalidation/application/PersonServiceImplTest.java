@@ -2,7 +2,9 @@ package com.example.block7crudvalidation.application;
 
 import com.example.block7crudvalidation.person.application.PersonServiceImpl;
 import com.example.block7crudvalidation.person.domain.Person;
+import com.example.block7crudvalidation.domain.person.domain.PersonMother;
 import com.example.block7crudvalidation.person.infrastructure.dto.input.PersonInputDTO;
+import com.example.block7crudvalidation.infrastructure.dto.input.PersonInputDTOMother;
 import com.example.block7crudvalidation.person.infrastructure.dto.output.PersonOutputDTO;
 
 import com.example.block7crudvalidation.person.infrastructure.repository.PersonRepository;
@@ -16,7 +18,6 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -44,10 +45,7 @@ class PersonServiceImplTest {
     @Test
     void testAddPerson() {
         // Execute
-        PersonInputDTO personInputDTO = new PersonInputDTO();
-        personInputDTO.setUsername("abarj");
-        personInputDTO.setName("Alvaro");
-        personInputDTO.setCompanyEmail("alvaro@email.com");
+        PersonInputDTO personInputDTO = PersonInputDTOMother.mockPersonDTO();
 
         PersonOutputDTO result = personService.addPerson(personInputDTO);
 
@@ -62,28 +60,11 @@ class PersonServiceImplTest {
     @Test
     void testGetPersons() {
         // Setup
-        Person person1 = new Person();
-        person1.setIdPerson(1);
-        person1.setUsername("abarj");
-        person1.setName("Alvaro");
-        person1.setCompanyEmail("alvaro@email.com");
+        Person person1 = PersonMother.mockPerson(1, "abarj", "Alvaro", "alvaro@email.com");
+        Person person2 = PersonMother.mockPerson(2, "user2", "Paula", "paula@email.com");
+        Person person3 = PersonMother.mockPerson(3, "user3", "Claudia", "claudia@email.com");
 
-        Person person2 = new Person();
-        person2.setIdPerson(2);
-        person2.setUsername("user2");
-        person2.setName("Paula");
-        person2.setCompanyEmail("paula@email.com");
-
-        Person person3 = new Person();
-        person3.setIdPerson(3);
-        person3.setUsername("user3");
-        person3.setName("Claudia");
-        person3.setCompanyEmail("claudia@email.com");
-
-        List<Person> personList = new ArrayList<>();
-        personList.add(person1);
-        personList.add(person2);
-        personList.add(person3);
+        List<Person> personList = List.of(person1, person2, person3);
 
         when(personRepository.findAll()).thenReturn(personList);
 
@@ -117,11 +98,7 @@ class PersonServiceImplTest {
     @Test
     void testGetPersonById() {
         // Setup
-        Person person = new Person();
-        person.setIdPerson(1);
-        person.setUsername("abarj");
-        person.setName("Alvaro");
-        person.setCompanyEmail("alvaro@email.com");
+        Person person = PersonMother.mockPerson(1, "abarj", "Alvaro", "alvaro@email.com");
 
         when(personRepository.findById(1)).thenReturn(Optional.of(person));
 
@@ -140,21 +117,10 @@ class PersonServiceImplTest {
     @Test
     void testGetPersonName() {
         // Setup
-        Person person1 = new Person();
-        person1.setIdPerson(1);
-        person1.setUsername("abarj");
-        person1.setName("Alvaro");
-        person1.setCompanyEmail("alvaro@email.com");
+        Person person1 = PersonMother.mockPerson(1, "abarj", "Alvaro", "alvaro@email.com");
+        Person person2 = PersonMother.mockPerson(2, "user2", "Paula", "paula@email.com");
 
-        Person person2 = new Person();
-        person2.setIdPerson(2);
-        person2.setUsername("user2");
-        person2.setName("Paula");
-        person2.setCompanyEmail("paula@email.com");
-
-        List<Person> personList = new ArrayList<>();
-        personList.add(person1);
-        personList.add(person2);
+        List<Person> personList = List.of(person1, person2);
 
         when(personRepository.findByName("Alvaro")).thenReturn(personList);
 
@@ -206,11 +172,7 @@ class PersonServiceImplTest {
     @Test
     void testDeletePerson() {
         // Setup
-        Person person = new Person();
-        person.setIdPerson(1);
-        person.setUsername("abarj");
-        person.setName("Alvaro");
-        person.setCompanyEmail("alvaro@email.com");
+        Person person = PersonMother.mockPerson(1, "abarj", "Alvaro", "alvaro@email.com");
 
         when(personRepository.findById(1)).thenReturn(Optional.of(person));
 

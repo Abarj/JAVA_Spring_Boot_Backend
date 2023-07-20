@@ -17,5 +17,6 @@ public interface StudentService{
     StudentOutputDTO updateStudent(Integer id, StudentInputDTO studentInputDTO);
     void deleteStudent(Integer id);
     StudentOutputDTO deleteSubjects(Integer idStudent, List<Integer> subjectsDelete);
-
+    StudentOutputDTO getStudentById(Integer idStudent);
+    void deleteAllStudents();
 }
