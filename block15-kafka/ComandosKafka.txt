@@ -1,0 +1,42 @@
+// CONFIGURACIÓN KAFKA + ZOOKEEPER
+
+// Utilizar WindowsPowerShell -> Ejecutar estos comandos desde el directorio raíz de kafka
+// Configurar el archivo kafka/config/server abrir con notepad++ y editar log.dirs={ruta de kafka}/kafka-logs
+// Configurar el archivo kafka/config/zookeeper abrir con notepad++ y editar dataDir={ruta de kafka}/zookeeper-data
+
+// ----------------------------------------------------------------------------------------------------------
+
+// LEVANTAR SERVIDORES Y APLICACIÓN
+
+// Iniciar Zookeeper (primera shell)
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+// Iniciar Kafka (segunda shell)
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+// ----------------------
+
+// En este punto ejecutamos la aplicación PROVIDER, la cual en nuestro caso CREARÁ AUTOMÁTICAMENTE el topic "Abarj-topic"
+
+// ----------------------
+
+// Crear un nuevo topic en el servidor de kafka (tercera shell)
+.\bin\windows\kafka-topics.bat --create --topic {topic-name} --bootstrap-server {host}:9092
+
+// Mostrar los detalles de un topic (tercera shell)
+.\bin\windows\kafka-topics.bat --describe --topic {topic-name} --bootstrap-server {host}:9092
+
+// Listar todos los topics que existen dentro del broker (tercera shell)
+.\bin\windows\kafka-topics.bat --list --bootstrap-server {host}:9092
+
+// ----------------------
+
+// Iniciar una consola para ver mensajes de un topic específico (cuarta shell)
+.\bin\windows\kafka-console-consumer.bat --topic {topic-name} --bootstrap-server {host}:9092
+
+// Iniciar una consola para enviar mensajes a un topic específico (quinta shell)
+.\bin\windows\kafka-console-producer.bat --broker-list {host}:9092 --topic {topic-name}
+
+
+
+
