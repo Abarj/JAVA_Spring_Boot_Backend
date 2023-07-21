@@ -1,0 +1,32 @@
+services:
+
+  docker_spring_boot:
+    container_name: docker_spring_boot
+    environment:
+      - DB_URL=jdbc:postgresql://postgres-db:5432/test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myapp
+    depends_on:
+      - "postgres-db"
+    ports:
+      - "8080:8080"
+    networks:
+      - bosonit-backend
+
+  postgres-db:
+    container_name: postgres-db
+    environment:
+      - POSTGRES_DB=test
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=contrasena
+    image: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - bosonit-backend
+
+networks:
+  bosonit-backend:
+    driver: bridge
