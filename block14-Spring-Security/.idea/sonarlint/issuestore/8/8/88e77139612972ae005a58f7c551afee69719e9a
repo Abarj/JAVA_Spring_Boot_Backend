@@ -1,0 +1,7 @@
+
+r	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž¤ØÇøÿÿÿÿ8“â½Ÿ–1
+r	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àý©‘ùÿÿÿÿ8”â½Ÿ–1
+S
+java:S6437."6Revoke and change this password, as it is compromised.(£…ÓÔ8Ô˜ïÀ–1
+t
+java:S62043"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Ž„¢§øÿÿÿÿ8·×ÅŸ–1
