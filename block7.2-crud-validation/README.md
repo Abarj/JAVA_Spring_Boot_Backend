@@ -166,15 +166,15 @@ GET “http://localhost:8080/{id}?outputType=full”
 "num_hours_week" : 40,
 "coments": “No puede trabajar por las tardes”,
 "id_persona": 1,
-"user": ‘francisco’,
-"password": “secreto”,
-"Name": “Francisco”,
-"Surname": “perez”,
-"company_email": “francisco@bosonit.com”,
-"personal_email": “francisco@gmail.com”,
-"city" : “zaragoza”,
+"user": ‘abarj’,
+"password": “1234567”,
+"Name": “Alvaro”,
+"Surname": “Apellido”,
+"company_email": “alvaro@bosonit.com”,
+"personal_email": “alvaro@gmail.com”,
+"city" : “Madrid”,
 "Active": true
-"created_date": ‘2021-10-03'
+"created_date": ‘2023-06-20'
 "imagen_url": “http://pictures.com/imagen1.png”,
 "termination_date": null
 }
