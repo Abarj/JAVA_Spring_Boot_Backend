@@ -1,0 +1,7 @@
+// Creamos y configuramos el archivo sonar-project.properties
+// ----------------------------------------------------------
+// Para realizar un test con SonarQube debemos iniciar el container de SonarQube que tenemos en Docker
+// Después accedemos en el navegador a localhost:9000 y esperamos que conecte con SonarQube
+// Linkeamos la aplicación con SonarQube mediante el comando+token que generamos
+// En una shell (no la de IntelliJ) nos movemos al directorio raíz de la app y corremos el comando anterior
+// Esperamos y cuando ponga BuildSuccess volvemos al navegador y vemos los detalles del escaneo más los datos de cobertura
