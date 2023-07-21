@@ -14,7 +14,7 @@ Bosonit & NxtGen Backend Starting Path
 * [Logging](https://github.com/Abarj/JavaTraining/tree/main/block5.3-logging)
 * [Profiles](https://github.com/Abarj/JavaTraining/tree/main/block5.4-profiles)
 
-### Spring Web
+### Spring Web (Block I)
 * [Simple Controllers](https://github.com/Abarj/JavaTraining/tree/main/block6-simple-controllers)
 * [Person Controllers](https://github.com/Abarj/JavaTraining/tree/main/block6.2-person-controllers)
 * [Path Variable and Headers](https://github.com/Abarj/JavaTraining/tree/main/block6.3-path-variable-headers)
