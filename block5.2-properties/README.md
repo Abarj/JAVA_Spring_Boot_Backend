@@ -1,5 +1,5 @@
 ## Nombre proyecto Maven
-**block5-properties**
+**block5.2-properties**
 
 ## Tiempo estimado:
 **4 horas**
