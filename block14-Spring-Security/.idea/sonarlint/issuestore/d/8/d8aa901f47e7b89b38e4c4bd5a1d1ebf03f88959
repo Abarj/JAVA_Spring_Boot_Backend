@@ -1,0 +1,17 @@
+
+h
+java:S1192."FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(ïŒŽˆúÿÿÿÿ8µ¥çÀ–1
+m
+java:S1192/"KDefine a constant instead of duplicating this literal "/person/**" 3 times.(‹‚§¢ýÿÿÿÿ8¶¥çÀ–1
+o
+java:S3305"RInject this field value directly into "filterChain", the only method that uses it.(À×Ë­8Á¥çÀ–1
+[
+java:S1874+"9Remove this use of "authorizeRequests"; it is deprecated.(Ê•š¹þÿÿÿÿ8È¥çÀ–1
+
+java:S1128"]Remove this unused import 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder'.(åÅÚ…ûÿÿÿÿ8÷÷ŠÂ–1
+{
+java:S1128"YRemove this unused import 'org.springframework.security.crypto.password.PasswordEncoder'.(‰¡ßáÿÿÿÿÿ8÷÷ŠÂ–1
+]
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(ÀÚèø8ø÷ŠÂ–1
+‚
+java:S1128"eRemove this unused import 'org.springframework.security.config.http.SessionCreationPolicy.STATELESS'.(Ò©ÍÙ8ø÷ŠÂ–1
