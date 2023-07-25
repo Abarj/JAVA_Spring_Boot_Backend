@@ -47,5 +47,6 @@ CRUD, Endpoints, Exceptions, Connected entities, Feign
 * [Consumer and Producer aplications](https://github.com/Abarj/JavaTraining/tree/main/block15-kafka)
 
 ### Spring Cloud
-* 
+* [Microservices w/ Eureka & API-Gateway]([https://github.com/Abarj/JavaTraining/tree/main/block15-kafka](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block16-Spring-Cloud)https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block16-Spring-Cloud)
 
+  
