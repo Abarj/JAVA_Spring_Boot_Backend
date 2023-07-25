@@ -45,5 +45,5 @@ CRUD, Endpoints, Exceptions, Connected entities, Feign
 * [Consumer and Producer aplications](https://github.com/Abarj/JavaTraining/tree/main/block15-kafka)
 
 ### Spring Cloud
-* [Consumer and Producer aplications]()
+* 
 
