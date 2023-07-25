@@ -1,0 +1,27 @@
+System Status
+Environment	test
+Data center	default
+Current time	2023-07-25T17:02:56 +0200
+Uptime	00:00
+Lease expiration enabled	false
+Renews threshold	6
+Renews (last min)	0
+DS Replicas
+Instances currently registered with Eureka
+Application	AMIs	Availability Zones	Status
+API-GATEWAY	n/a (1)	(1)	UP (1) - api-gateway:ada65971a8012f93df6441bbdf3cb9b7
+BLOCK16-SPRING-CLOUD-BACKEND	n/a (1)	(1)	UP (1) - block16-Spring-Cloud-Backend:36ce5a99bb2514212f8eacb61eedcdb5
+BLOCK16-SPRING-CLOUD-BACKEND-FRONTEND	n/a (1)	(1)	UP (1) - block16-Spring-Cloud-Backend-Frontend:6c2c1233b5d9c2775af7cd80c8bb6a93
+General Info
+Name	Value
+total-avail-memory	196mb
+num-of-cpus	8
+current-memory-usage	112mb (57%)
+server-uptime	00:00
+registered-replicas
+unavailable-replicas
+available-replicas
+Instance Info
+Name	Value
+ipAddr	192.168.1.36
+status	UP
