@@ -1,6 +1,6 @@
 ## Nombre proyecto Maven
 
-**block16-spring-cloud**
+**Block16-spring-cloud**
 
 ## Objetivos
 1.- Desarrollar una aplicación backend robusta con dos entidades (Cliente y Viaje) que permita realizar operaciones CRUD y gestionar pasajeros en viajes.
