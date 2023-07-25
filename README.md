@@ -2,6 +2,8 @@
 # Backend Bosonit Training
 Bosonit & NxtGen Backend Starting Path
 
+El enfoque principal de este repositorio es el desarrollo Backend utilizando Java Spring Boot con Maven y todas las herramientas y tecnologías asociadas para crear aplicaciones robustas y escalables.
+
 ## Projects
 
 ### Tools
