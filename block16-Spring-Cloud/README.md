@@ -3,11 +3,11 @@
 **Block16-spring-cloud**
 
 ## Objetivos
-1.- Desarrollar una aplicación backend robusta con dos entidades (Cliente y Viaje) que permita realizar operaciones CRUD y gestionar pasajeros en viajes.
-2.- Implementar una aplicación backend-Front que interactúe con la aplicación backend utilizando RestTemplate o Feign para generar tickets con información de pasajeros y viajes.
-3.- Crear una aplicación Eureka-Naming-Server para el registro y descubrimiento de servicios (microservicios) en el entorno de Spring Cloud.
-4.- Desarrollar una aplicación API-Gateway que funcione como punto de entrada a los microservicios y facilite su conexión con Eureka.
-5.- Dockerizar las aplicaciones para permitir una fácil implementación y manejar las dependencias entre servicios y bases de datos.
+- Desarrollar una aplicación backend robusta con dos entidades (Cliente y Viaje) que permita realizar operaciones CRUD y gestionar pasajeros en viajes.
+- Implementar una aplicación backend-Front que interactúe con la aplicación backend utilizando RestTemplate o Feign para generar tickets con información de pasajeros y viajes.
+- Crear una aplicación Eureka-Naming-Server para el registro y descubrimiento de servicios (microservicios) en el entorno de Spring Cloud.
+- Desarrollar una aplicación API-Gateway que funcione como punto de entrada a los microservicios y facilite su conexión con Eureka.
+- Dockerizar las aplicaciones para permitir una fácil implementación y manejar las dependencias entre servicios y bases de datos.
 
 ## Requisitos
 - La aplicación backend debe tener endpoints para realizar operaciones CRUD en las entidades Cliente y Viaje.
