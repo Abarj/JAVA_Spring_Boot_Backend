@@ -1,0 +1,8 @@
+micronaut:
+  application:
+    name: block19MicronautKotlinMongoDBAPI
+netty:
+  default:
+    allocator:
+      max-order: 3
+mongodb.uri: mongodb://localhost:27017/Block19Micronaut
