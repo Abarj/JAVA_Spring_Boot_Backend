@@ -67,6 +67,6 @@ CRUD, Endpoints, Exceptions, Connected entities, Feign
 * [Spring w/ GraphQL](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block21-Spring-GraphQL)
 
 ### Spring Advanced Project
-* [Spring Advanced Project w/ Spring Web/ Data/ Microservices/ Security & Tests](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block22-Spring-Advanced)
+* [Spring Advanced Project w/ Spring Web/ Data/ Cloud/ Microservices/ Security & Tests](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block22-Spring-Advanced)
 
   
