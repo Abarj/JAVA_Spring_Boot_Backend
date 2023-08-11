@@ -1,0 +1,36 @@
+Plugins:
+Bundled analyzers:
+  - Python Code Quality and Security 4.3.0.11660 (python)
+  - Clean as You Code 2.0.0.334 (cayc)
+  - Go Code Quality and Security 1.13.0.4374 (go)
+  - JaCoCo 1.3.0.1538 (jacoco)
+  - Kotlin Code Quality and Security 2.15.0.2579 (kotlin)
+  - IaC Code Quality and Security 1.17.0.3976 (iac)
+  - JavaScript/TypeScript/CSS Code Quality and Security 10.3.1.21905 (javascript)
+  - Ruby Code Quality and Security 1.13.0.4374 (ruby)
+  - Scala Code Quality and Security 1.13.0.4374 (sonarscala)
+  - C# Code Quality and Security 9.3.0.71466 (csharp)
+  - Java Code Quality and Security 7.20.0.31692 (java)
+  - HTML Code Quality and Security 3.8.0.3510 (web)
+  - Flex Code Quality and Security 2.9.0.3375 (flex)
+  - XML Code Quality and Security 2.8.1.4006 (xml)
+  - PHP Code Quality and Security 3.30.0.9766 (php)
+  - Text Code Quality and Security 2.1.0.1163 (text)
+  - VB.NET Code Quality and Security 9.3.0.71466 (vbnet)
+  - Configuration detection fot Code Quality and Security 1.2.0.267 (config)
+Global server settings:
+  - sonar.core.id=147B411E-AYlzBIe1RwDer_ed7Fb9
+  - sonar.core.startTime=2023-08-11T09:24:35+0000
+  - sonar.forceAuthentication=true
+Project server settings:
+Project scanner properties:
+  - sonar.host.url=http://localhost:9000
+  - sonar.projectBaseDir=C:\Users\alvaro.fbarjau\IdeaProjects\block22-Spring-Advanced
+  - sonar.projectKey=block22-Spring-Advanced
+  - sonar.scanner.app=ScannerCLI
+  - sonar.scanner.appVersion=4.7.0.2747
+  - sonar.sourceEncoding=windows-1252
+  - sonar.sources=.
+  - sonar.token=******
+  - sonar.verbose=true
+  - sonar.working.directory=C:\Users\alvaro.fbarjau\IdeaProjects\block22-Spring-Advanced\.scannerwork
