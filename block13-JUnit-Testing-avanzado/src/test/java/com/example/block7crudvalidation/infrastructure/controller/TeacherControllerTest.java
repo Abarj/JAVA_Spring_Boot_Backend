@@ -50,6 +50,7 @@ class TeacherControllerTest {
     private TeacherInputDTO setUpInput() {
         TeacherInputDTO teacherInputDTO = new TeacherInputDTO();
         Person person = new Person();
+        person.setIdPerson(1);
         personRepository.save(person);
 
         teacherInputDTO.setIdPerson(1);

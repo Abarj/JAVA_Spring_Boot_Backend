@@ -1,9 +1,9 @@
 package com.example.block7crudvalidation.application;
 
-import com.example.block7crudvalidation.domain.subject.domain.SubjectMother;
-import com.example.block7crudvalidation.domain.teacher.domain.TeacherMother;
+import com.example.block7crudvalidation.domain.person.PersonMother;
+import com.example.block7crudvalidation.domain.subject.SubjectMother;
+import com.example.block7crudvalidation.domain.teacher.TeacherMother;
 import com.example.block7crudvalidation.person.domain.Person;
-import com.example.block7crudvalidation.domain.person.domain.PersonMother;
 import com.example.block7crudvalidation.person.infrastructure.repository.PersonRepository;
 import com.example.block7crudvalidation.student.application.StudentServiceImpl;
 import com.example.block7crudvalidation.student.domain.Student;

@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.171 s <<< FAILURE! - in com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest
-com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.deleteStudent  Time elapsed: 0.021 s  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.329 s <<< FAILURE! - in com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest
+com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.deleteStudent  Time elapsed: 0.073 s  <<< ERROR!
 java.lang.RuntimeException: No person found with id: 1
 	at com.example.block7crudvalidation.student.application.StudentServiceImpl.lambda$addStudent$0(StudentServiceImpl.java:37)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.example.block7crudvalidation.student.application.StudentServiceImpl.addStudent(StudentServiceImpl.java:37)
-	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.deleteStudent(StudentControllerTest.java:154)
+	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.deleteStudent(StudentControllerTest.java:155)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,12 +80,12 @@ java.lang.RuntimeException: No person found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.getStudentId  Time elapsed: 0.021 s  <<< ERROR!
+com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.getStudentId  Time elapsed: 0.047 s  <<< ERROR!
 java.lang.RuntimeException: No person found with id: 1
 	at com.example.block7crudvalidation.student.application.StudentServiceImpl.lambda$addStudent$0(StudentServiceImpl.java:37)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.example.block7crudvalidation.student.application.StudentServiceImpl.addStudent(StudentServiceImpl.java:37)
-	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.getStudentId(StudentControllerTest.java:115)
+	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.getStudentId(StudentControllerTest.java:116)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,7 +158,7 @@ java.lang.RuntimeException: No person found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.addStudent  Time elapsed: 0.044 s  <<< ERROR!
+com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.addStudent  Time elapsed: 0.072 s  <<< ERROR!
 jakarta.servlet.ServletException: Request processing failed: java.lang.RuntimeException: No person found with id: 1
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1019)
 	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
@@ -169,7 +169,7 @@ jakarta.servlet.ServletException: Request processing failed: java.lang.RuntimeEx
 	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.addStudent(StudentControllerTest.java:86)
+	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.addStudent(StudentControllerTest.java:87)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -261,12 +261,12 @@ Caused by: java.lang.RuntimeException: No person found with id: 1
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
 	... 80 more
 
-com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.updateStudent  Time elapsed: 0.02 s  <<< ERROR!
+com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.updateStudent  Time elapsed: 0.028 s  <<< ERROR!
 java.lang.RuntimeException: No person found with id: 1
 	at com.example.block7crudvalidation.student.application.StudentServiceImpl.lambda$addStudent$0(StudentServiceImpl.java:37)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.example.block7crudvalidation.student.application.StudentServiceImpl.addStudent(StudentServiceImpl.java:37)
-	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.updateStudent(StudentControllerTest.java:131)
+	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.updateStudent(StudentControllerTest.java:132)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -339,12 +339,12 @@ java.lang.RuntimeException: No person found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.getAllStudents  Time elapsed: 0.017 s  <<< ERROR!
+com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.getAllStudents  Time elapsed: 0.029 s  <<< ERROR!
 java.lang.RuntimeException: No person found with id: 1
 	at com.example.block7crudvalidation.student.application.StudentServiceImpl.lambda$addStudent$0(StudentServiceImpl.java:37)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.example.block7crudvalidation.student.application.StudentServiceImpl.addStudent(StudentServiceImpl.java:37)
-	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.getAllStudents(StudentControllerTest.java:98)
+	at com.example.block7crudvalidation.infrastructure.controller.StudentControllerTest.getAllStudents(StudentControllerTest.java:99)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

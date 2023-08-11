@@ -1,6 +1,5 @@
-package com.example.block7crudvalidation.domain.teacher.domain;
+package com.example.block7crudvalidation.domain.teacher;
 
-import com.example.block7crudvalidation.person.domain.Person;
 import com.example.block7crudvalidation.teacher.domain.Teacher;
 
 public class TeacherMother {

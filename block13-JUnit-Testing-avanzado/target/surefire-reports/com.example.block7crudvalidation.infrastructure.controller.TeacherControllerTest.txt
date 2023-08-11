@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.153 s <<< FAILURE! - in com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest
-com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.getAllTeachers  Time elapsed: 0.021 s  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.274 s <<< FAILURE! - in com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest
+com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.getAllTeachers  Time elapsed: 0.03 s  <<< ERROR!
 java.lang.RuntimeException: No person found with id: 1
 	at com.example.block7crudvalidation.teacher.application.TeacherServiceImpl.lambda$addTeacher$0(TeacherServiceImpl.java:27)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.example.block7crudvalidation.teacher.application.TeacherServiceImpl.addTeacher(TeacherServiceImpl.java:27)
-	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.getAllTeachers(TeacherControllerTest.java:95)
+	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.getAllTeachers(TeacherControllerTest.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,12 +80,12 @@ java.lang.RuntimeException: No person found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.deleteTeacher  Time elapsed: 0.024 s  <<< ERROR!
+com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.deleteTeacher  Time elapsed: 0.037 s  <<< ERROR!
 java.lang.RuntimeException: No person found with id: 1
 	at com.example.block7crudvalidation.teacher.application.TeacherServiceImpl.lambda$addTeacher$0(TeacherServiceImpl.java:27)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.example.block7crudvalidation.teacher.application.TeacherServiceImpl.addTeacher(TeacherServiceImpl.java:27)
-	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.deleteTeacher(TeacherControllerTest.java:150)
+	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.deleteTeacher(TeacherControllerTest.java:151)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,12 +158,12 @@ java.lang.RuntimeException: No person found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.getTeacherId  Time elapsed: 0.023 s  <<< ERROR!
+com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.getTeacherId  Time elapsed: 0.044 s  <<< ERROR!
 java.lang.RuntimeException: No person found with id: 1
 	at com.example.block7crudvalidation.teacher.application.TeacherServiceImpl.lambda$addTeacher$0(TeacherServiceImpl.java:27)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.example.block7crudvalidation.teacher.application.TeacherServiceImpl.addTeacher(TeacherServiceImpl.java:27)
-	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.getTeacherId(TeacherControllerTest.java:112)
+	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.getTeacherId(TeacherControllerTest.java:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -236,7 +236,7 @@ java.lang.RuntimeException: No person found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.addTeacher  Time elapsed: 0.026 s  <<< ERROR!
+com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.addTeacher  Time elapsed: 0.056 s  <<< ERROR!
 jakarta.servlet.ServletException: Request processing failed: java.lang.RuntimeException: No person found with id: 1
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1019)
 	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
@@ -247,7 +247,7 @@ jakarta.servlet.ServletException: Request processing failed: java.lang.RuntimeEx
 	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.addTeacher(TeacherControllerTest.java:81)
+	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.addTeacher(TeacherControllerTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -339,12 +339,12 @@ Caused by: java.lang.RuntimeException: No person found with id: 1
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
 	... 80 more
 
-com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.updateTeacher  Time elapsed: 0.016 s  <<< ERROR!
+com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.updateTeacher  Time elapsed: 0.04 s  <<< ERROR!
 java.lang.RuntimeException: No person found with id: 1
 	at com.example.block7crudvalidation.teacher.application.TeacherServiceImpl.lambda$addTeacher$0(TeacherServiceImpl.java:27)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.example.block7crudvalidation.teacher.application.TeacherServiceImpl.addTeacher(TeacherServiceImpl.java:27)
-	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.updateTeacher(TeacherControllerTest.java:128)
+	at com.example.block7crudvalidation.infrastructure.controller.TeacherControllerTest.updateTeacher(TeacherControllerTest.java:129)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

@@ -1,4 +1,4 @@
-package com.example.block7crudvalidation.domain.person.domain;
+package com.example.block7crudvalidation.domain.person;
 
 import com.example.block7crudvalidation.person.domain.Person;
 

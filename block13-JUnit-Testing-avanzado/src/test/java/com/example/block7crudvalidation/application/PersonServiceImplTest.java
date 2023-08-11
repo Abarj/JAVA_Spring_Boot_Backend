@@ -1,8 +1,8 @@
 package com.example.block7crudvalidation.application;
 
+import com.example.block7crudvalidation.domain.person.PersonMother;
 import com.example.block7crudvalidation.person.application.PersonServiceImpl;
 import com.example.block7crudvalidation.person.domain.Person;
-import com.example.block7crudvalidation.domain.person.domain.PersonMother;
 import com.example.block7crudvalidation.person.infrastructure.dto.input.PersonInputDTO;
 import com.example.block7crudvalidation.infrastructure.dto.input.PersonInputDTOMother;
 import com.example.block7crudvalidation.person.infrastructure.dto.output.PersonOutputDTO;
