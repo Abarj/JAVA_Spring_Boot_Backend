@@ -40,7 +40,7 @@ CRUD, Endpoints, Exceptions, Connected entities, Feign
 ### JUnit Testing
 * [Testing CRUD](https://github.com/Abarj/JavaTraining/tree/main/block13-JUnit-Testing-avanzado)
 
-### Spring Security
+### Spring Security (Block I)
 * [Login](https://github.com/Abarj/JavaTraining/tree/main/block14-Spring-Security)
 
 ### Kafka
@@ -48,5 +48,25 @@ CRUD, Endpoints, Exceptions, Connected entities, Feign
 
 ### Spring Cloud (Block I)
 * [Microservices w/ Eureka & API-Gateway](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block16-Spring-Cloud)
+
+### Spring Batch Advanced (Block I)
+* [Spring Batch Flow Conditional](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block17-Spring-Batch-Flow)
+* [Spring Batch - Tasklets](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block17.2-Spring-Batch-Application)
+* [Spring Batch - Chunks](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block17.3-Spring-Batch-Chunk)
+
+### Quarkus
+* [Quarkus API](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block18-Quarkus-API)
+
+### Micronaut
+* [Micronaut w/ Kotlin w/ MongoDB API](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block19-Micronaut-Kotlin-MongoDB-API)
+
+### Spring Security (Block II)
+* [Keycloak w/ OAuth-2.0](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block20-Spring-Boot-Keycloadk-OAuth-2.0)
+
+### GraphQL
+* [Spring w/ GraphQL](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block21-Spring-GraphQL)
+
+### Spring Advanced Project
+* [Spring Advanced Project w/ Spring Web/ Data/ Cloud/ Microservices/ Security & Tests](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block22-Spring-Advanced)
 
   
