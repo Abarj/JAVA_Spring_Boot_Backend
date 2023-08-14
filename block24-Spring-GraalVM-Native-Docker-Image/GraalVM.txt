@@ -1,0 +1,6 @@
+Add new configuration -> Maven
+Run: clean spring-boot:build-image
+Profiles: native
+docker image ls
+docker run -ti -p 8080:8080 block24-spring-graalvm-native-docker-image:0.0.1-SNAPSHOT
+
