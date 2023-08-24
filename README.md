@@ -71,4 +71,11 @@ CRUD, Endpoints, Exceptions, Connected entities, Feign
 ### Spring Advanced Project
 * [Spring Advanced Project w/ Spring Web/ Data/ Cloud/ Microservices/ Security & Tests](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block22-Spring-Advanced)
 
+### Spring SOAP Services
+* [Spring SOAP Services Project](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block23-Spring-Boot-SOAP-Services)
   
+### GraalVM
+* [GraalVM Native Docker Image](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block24-Spring-GraalVM-Native-Docker-Image)
+
+### Spring Cloud Advanced Microservices Project
+* [Spring Cloud Advanced Microservices Project w/ Mongo/ MySQL/ Resilience4J/ Kafka/ Keycloak/ Eureka/ Zipkin/ Sleuth/ Prometheus/ Grafana/](https://github.com/Abarj/JAVA_Spring_Boot_Backend/tree/main/block25-Spring-Cloud-Advanced-Microservices)
