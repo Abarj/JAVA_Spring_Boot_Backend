@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@stomp/stompjs": "^5.2.0",
-    "sockjs-client": "^1.6.1",
-    "sweetalert2": "^11.7.27"
-  }
-}
