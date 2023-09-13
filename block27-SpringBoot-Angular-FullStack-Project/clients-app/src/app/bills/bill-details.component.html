@@ -1,0 +1,54 @@
+<div class="card bg-light" *ngIf="bill">
+    <div class="card-header">{{title}}: {{bill.description}}</div>
+    <div class="card-body">
+        <h4 class="card-title">
+            <a [routerLink]="['/clients']" class="btn btn-light btn-xs">&laquo; Back</a>
+        </h4>
+
+        <ul class="list-group my-2">
+            <li class="list-group-item" style="background-color: rgb(255, 0, 255);">Client details</li>
+            <li class="list-group-item">Name: {{bill.client.name}}</li>
+            <li class="list-group-item">Lastname: {{bill.client.lastName}}</li>
+            <li class="list-group-item">Email: {{bill.client.email}}</li>
+        </ul>
+
+        <ul class="list-group my-2">
+            <li class="list-group-item" style="background-color: rgb(255, 0, 255);">Bill details</li>
+            <li class="list-group-item">ID: {{bill.id}}</li>
+            <li class="list-group-item">Description: {{bill.description}}</li>
+            <li class="list-group-item">Date: {{bill.createAt}}</li>
+        </ul>
+
+        <table class="table table-striped table-hover table-bordered my-3">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of bill.items">
+                    <td>{{item.product.name}}</td>
+                    <td>{{item.product.price}}</td>
+                    <td>{{item.amount}}</td>
+                    <td>{{item.invoice}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5><span>TOTAL</span>: <span style="font-weight: bold; font-size: medium;">{{bill.total}}€</span></h5>
+        
+
+        <div class="card border-info mb-4" style="max-width: 600px;">
+            <div class="card card-header">
+                Observations:
+            </div>
+            <div class="card card-body">
+                <p *ngIf="!bill.observations">No observations</p>
+                <p *ngIf="bill.observations">{{bill.observations}}</p>
+            </div>
+        </div>
+    </div>
+</div>

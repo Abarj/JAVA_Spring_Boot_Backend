@@ -1,0 +1,10 @@
+<button type="button" (click)="setEnable()" class="btn btn-primary my-3">{{ enable == true? 'Hide' : 'Show'}}</button>
+
+<div class="card">
+    <div class="card-header">
+        List of available courses
+    </div>
+    <ul class="list-group" *ngIf="enable == true">
+        <li class="list-group-item" *ngFor="let course of coursesList">{{ course }}</li>
+    </ul>
+</div>

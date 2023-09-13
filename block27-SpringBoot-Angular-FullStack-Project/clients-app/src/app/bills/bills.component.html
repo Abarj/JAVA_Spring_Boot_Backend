@@ -1,0 +1,96 @@
+<div class="card bg-light">
+    <div class="card-header" style="background-color: greenyellow;">{{title}}: {{bill.description}}</div>
+    <div class="card-body">
+        <h4 class="card-title">
+            <a [routerLink]="['/clients']" class="btn btn-light btn-xs">&laquo; Back</a>
+        </h4>
+
+        <form #billForm="ngForm">
+            <div class="form-group row" *ngIf="bill.client">
+                <label for="client" class="col-sm-2 col-form-label mb-3">Client</label>
+                <div class="col-sm-6">
+                    <input type="text" name="client" value="{{bill.client.name}} {{bill.client.lastName}}" class="form-control" disabled>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="description" class="col-sm-2 col-form-label mb-3">Description</label>
+                <div class="col-sm-6">
+                    <input type="text" name="description" [(ngModel)]="bill.description" class="form-control" required #description="ngModel">
+                    <div class="alert alert-danger" *ngIf="description.invalid && description.touched || description.invalid && billForm.submitted">
+                        Description is required
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="observations" class="col-sm-2 col-form-label mb-5">Observations</label>
+                <div class="col-sm-6">
+                    <textarea name="observations" [(ngModel)]="bill.observations" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <mat-form-field>
+                        <mat-label>Product</mat-label>
+                        <input type="text"
+                            placeholder="Add product"
+                            aria-label="Products"
+                            matInput
+                            [formControl]="myControl"
+                            [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete" [displayWith]="showName" (optionSelected)="selectProduct($event)">
+                            <mat-option *ngFor="let product of filteredProducts | async" [value]="product">
+                                {{product.name}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+
+                    <div class="alert alert-danger" *ngIf="myControl.invalid && billForm.submitted">
+                        You cannot create an empty invoice
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info my-4" *ngIf="bill.items.length == 0">
+                There are no items assigned to this bill
+            </div>
+
+            <table class="table table-striped table-hover table-sm" *ngIf="bill.items.length > 0">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let item of bill.items">
+                        <td>{{item.product.name}}</td>
+                        <td>{{item.product.price}}</td>
+                        <td>
+                            <input type="number" value="{{item.amount}}" class="form-control col-sm-4" (change)="updateAmount(item.product.id, $event)" style="width: auto;">
+                        </td>
+                        <td>{{item.calculateInvoice()}}</td>
+                        <td>
+                            <button style="vertical-align: middle; width: 50px;" class="btn btn-danger btn-sm text-center" type="button" (click)="deleteBillItem(item.product.id)">x</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5 *ngIf="bill.items.length > 0"><span>TOTAL</span>: <span style="font-weight: bold; font-size: medium;">{{bill.calculateTotal()}}€</span></h5>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="submit" (click)="create(billForm)" value="Create invoice" class="btn btn-secondary" style="background-color: #6c757d; color: #fff;" onmouseover="this.style.backgroundColor='greenyellow'; this.style.color='#000';"
+                    onmouseout="this.style.backgroundColor='#6c757d'; this.style.color='#fff';">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

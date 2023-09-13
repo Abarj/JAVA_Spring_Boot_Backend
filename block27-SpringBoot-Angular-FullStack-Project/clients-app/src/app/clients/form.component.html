@@ -1,0 +1,85 @@
+<ul class="alert alert-danger" *ngIf="errors?.length > 0">
+    <li *ngFor="let error of errors">{{ error }}</li>
+</ul>
+
+<div class="card bg-dark text-white">
+    <div class="card-header">{{ title }}</div>
+    <div class="card-body">
+        <form #clientForm="ngForm">
+            <div class="form-group row">
+                <label for="name" class="col-form-label col-sm-2">Name</label>
+                <div>
+                    <input type="text" class="form-control" [(ngModel)]="client.name" name="name" #name="ngModel"> <!-- required minlength="3"-->
+                    <div class="alert alert-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+                        <div *ngIf="name.errors.required">
+                            Name is required
+                        </div>
+                        <div *ngIf="name.errors.minlength">
+                            The name must be at least three characters
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="lastName" class="col-form-label col-sm-2">Last name</label>
+                <div>
+                    <input type="text" class="form-control" [(ngModel)]="client.lastName" name="lastname" #lastName="ngModel"> <!-- required -->
+                    <div class="alert alert-danger" *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)">
+                        <div *ngIf="lastName.errors.required">
+                            Lastname is required
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="email" class="col-form-label col-sm-2">Email</label>
+                <div>
+                    <input type="text" class="form-control" [(ngModel)]="client.email" name="email" #email="ngModel"> <!-- required email-->
+                    <div class="alert alert-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+                        <div *ngIf="email.errors.required">
+                            Email is required
+                        </div>
+                        <div *ngIf="email.errors.email">
+                            Invalid email format
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="createAt" class="col-form-label col-sm-2">Date</label>
+                <div>
+                    <mat-form-field>
+                        <mat-label>Choose a date</mat-label>
+                        <input matInput [matDatepicker]="picker" class="form-control" [(ngModel)]="client.createAt" name="createAt">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+                </div>
+            </div>
+
+            <div class="form-group row" style="width: 450px;">
+                <label for="region" class="col-form-label col-sm-2">Region</label>
+                <div>
+                    <select [compareWith]="compareRegion" class="form-control" [(ngModel)]="client.region" name="region">
+                        <option [ngValue]="undefined">--- Select a region ---</option>
+                        <option *ngFor="let region of regions" [ngValue]="region">
+                            {{region.name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group-row">
+                <div class="col-sm-6">
+                    <button class="btn btn-primary my-2" role="button" (click)="create()" *ngIf="!client.id else elseBlock" [disabled]="!clientForm.form.valid">Create</button>
+                    <ng-template #elseBlock>
+                        <button class="btn btn-primary my-2" role="button" (click)="update()" [disabled]="!clientForm.form.valid">Update</button>
+                    </ng-template>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

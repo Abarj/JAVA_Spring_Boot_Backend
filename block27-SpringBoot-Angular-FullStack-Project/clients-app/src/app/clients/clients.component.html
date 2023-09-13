@@ -1,0 +1,51 @@
+<client-details *ngIf="selectedClient" [client]="selectedClient"></client-details>
+
+<div class="card border-primary mb-3">
+    <div class="card-header">Clients</div>
+    <div class="card-body text-primary">
+      <div class="my-2 text-left">
+        <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/clients/form']">Add client</button>
+      </div>
+
+      <div *ngIf="clients?.length == 0" class="alert alert-info">
+        There are no records in the database!
+      </div>
+
+      <table class="table table-bordered table-striped" *ngIf="clients?.length > 0">
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Created At</th>
+                <th>Email</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let client of clients">
+                <td class="text-center" style="vertical-align: middle; width: 90px;">
+                  <img (click)="openModal(client)" *ngIf="client?.avatar" src="http://localhost:8080/api/uploads/img/{{ client.avatar }}" alt="{{ client.avatar }}" class="img-thumbnail rounded" style="width: 64px; cursor: pointer;">
+                  <img (click)="openModal(client)" *ngIf="!client?.avatar" src="http://localhost:8080/images/no-user.png" alt="default avatar" class="img-thumbnail rounded" style="width: 64px; cursor: pointer;">
+                </td>
+                <td>{{ client.name }}</td>
+                <td>{{ client.lastName | uppercase }}</td>
+                <td>{{ client.createAt | date:"EEEE dd, MMMM yyyy"}}</td>
+                <td>{{ client.email }}</td>
+                <td class="text-center" style="vertical-align: middle; width: 145px;">
+                  <button type="button" class="btn btn-success btn-md" [routerLink]="['/bills/form', client.id]">Create invoice</button>
+                </td>
+                <td class="text-center" style="vertical-align: middle; width: 90px;">
+                  <button type="button" name="update" [routerLink]="['/clients/form', client.id]" class="btn btn-warning btn-md">Update</button>
+                </td>
+                <td class="text-center" style="vertical-align: middle; width: 90px;">
+                  <button type="button" name="delete" (click)="delete(client)" class="btn btn-danger btn-md">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+      <paginator-nav *ngIf="paginator" [paginator]="paginator"></paginator-nav>
+    </div>
+  </div>

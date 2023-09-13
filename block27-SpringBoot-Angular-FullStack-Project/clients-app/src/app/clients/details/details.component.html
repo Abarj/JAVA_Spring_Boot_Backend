@@ -1,0 +1,84 @@
+<div class="open-modal animation fadeIn" *ngIf="modalService.modal">
+    <div class="modal" tabindex="-1" style="display: block;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">{{ title }}</h5>
+                    <button (click)="closeModal()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <ul *ngIf="client" class="list-group text-dark mb-3">
+                                    <li class="list-group-item active">{{ client.name }}</li>
+                                    <li class="list-group-item">{{ client.lastName }}</li>
+                                    <li class="list-group-item">{{ client.email }}</li>
+                                    <li class="list-group-item">{{ client.region.name }}</li>
+                                    <li class="list-group-item">{{ client.createAt | date:"fullDate" }}</li>
+                                </ul>
+            
+                                <div class="input-group mb-3">
+                                    <input (change)="selectAvatar($event)" type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    <button (click)="uploadAvatar()" [disabled]="!selectedAvatar" class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button>
+                                </div>
+            
+                                <div *ngIf="progress > 0" style="height: 40px;" class="progress" role="progressbar" aria-label="Animated striped example" attr.aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" [ngStyle]="{'width': progress + '%'}">
+                                        {{progress}}%
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm">
+                                <img *ngIf="client?.avatar" src="http://localhost:8080/api/uploads/img/{{ client.avatar }}" alt="{{ client.avatar }}" class="img-thumbnail rounded">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <button type="button" class="btn btn-success btn-sm" [routerLink]="['/bills/form', client.id]">Create invoice</button>
+                        </div>
+
+                        <div class="row">
+                            <div class="alert alert-info my-4" *ngIf="client.bills.length == 0">
+                                There are no invoices assigned to this customer: {{client.name}} {{client.lastName}}
+                            </div>
+
+                            <table class="table table-bordered table striped my-4" *ngIf="client.bills.length > 0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Description</th>
+                                        <th>Date</th>
+                                        <th>Total</th>
+                                        <th>Details</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let bill of client.bills">
+                                        <td>{{bill.id}}</td>
+                                        <td>{{bill.description}}</td>
+                                        <td>{{bill.createAt}}</td>
+                                        <td>{{bill.total}}€</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm" type="button" [routerLink]="['/bills', bill.id]">Show</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button" (click)="delete(bill)">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button (click)="closeModal()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
