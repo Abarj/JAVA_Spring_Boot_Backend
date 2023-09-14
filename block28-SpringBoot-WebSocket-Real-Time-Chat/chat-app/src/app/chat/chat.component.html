@@ -1,0 +1,45 @@
+<div class="card mx-4 my-4" style="width: 500px;">
+    <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item" *ngIf="!connected">
+                <input type="text" class="form-control mx-2" [(ngModel)]="message.username" placeholder="Username" name="username" style="width: 250px;">
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-success" type="button" (click)="connect()" *ngIf="!connected" [disabled]="!message.username">Connect</button>
+            </li>
+            <li class="nav-item">
+                <div>
+                    <button class="btn btn-warning mx-2" type="button" (click)="disconnect()" *ngIf="connected">Exit</button>
+                    <span *ngIf="connected" style="font-size: small; margin-left: 100px;">Logged in as @<span style="font-weight: bold;">{{message.username}}</span></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div #scrollChat [scrollTop]="scrollChat.scrollHeight" class="card-body" style="overflow-y: scroll; height: 360px;" *ngIf="connected">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-light" *ngFor="let message of messages">
+                <span *ngIf="message.type == 'NEW_USER'">
+                    <span style="font-weight: bold;">{{message.date | date: 'shortTime'}}</span> @ {{message.text}}
+                    <span [ngStyle]="{'color': message.color}">{{message.username}}</span>
+                </span>
+                <span *ngIf="message.type == 'MESSAGE'">
+                    <span style="font-weight: bold;">{{message.date | date: 'shortTime'}} </span>
+                    <span [ngStyle]="{'color': message.color}">{{message.username}}</span> :<br> {{message.text}}
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card-footer" *ngIf="connected">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="message.text" placeholder="Write a message..." name="text" style="width: 465px;" (keyup)="writinEvent()">
+            </div>
+
+            <button class="btn btn-primary" style="margin-top: 15px;" type="submit" (click)="sendMessage()">Send</button>
+        </form>
+
+        <div>{{writing}}</div>
+    </div>
+</div>
