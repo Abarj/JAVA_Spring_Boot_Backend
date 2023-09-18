@@ -1,0 +1,55 @@
+<div class="bg-image">
+    <div class="mask">
+        <div class="card text-bg-white mb-3 custom-card" id="raiz">
+            <h2 class="custom-welcome">&nbsp;&nbsp;Welcome {{username}}</h2>
+
+            <div class="card-header"></div>
+            
+            <div class="card-body">
+                <div class="buttons">
+                    <button class="btn btn-rounded customized" type ="button" (click)="create()">New game</button>
+
+                    <button class="btn btn-rounded customized" style="margin: 10px;" type ="button" (click)="loadSessions()">Update</button>
+                </div>
+
+                <h5 class="card-title">Match list</h5>
+
+                <div class="alert alert-info" *ngIf="sessions.length==0">
+                    No games have been created yet, start your own!
+                </div>
+
+                <table class="table table-bordered" *ngIf="sessions.length!=0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Player1</th>
+                            <th>Player2</th>
+                            <th>Date</th>
+                            <th>Play</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor=" let session of sessions">
+                            <td class="text-lowercase">{{  session.id }}</td>
+                            <td class="text-uppercase">{{  session.playerOne }}</td>
+                            <td class="text-uppercase">{{  session.playerTwo }}</td>
+                            <td class="date-format dd-mm-yyyy">{{  session.createdAt }}</td>
+                            <td>
+                                <button type="button" *ngIf="session.status=='OPEN'" (click)="newSession(session.id)" class="btn btn-primary btn-sm customized-play">Play</button>
+                                <button type="button" *ngIf="session.status=='WINNER_ONE'"  class="btn btn-primary btn-sm winner-customized">WINNER {{session.playerOne}}</button>
+                                <button type="button" *ngIf="session.status=='WINNER_TWO'"  class="btn btn-primary btn-sm winner-customized">WINNER {{session.playerTwo}}</button>
+                                <button type="button" *ngIf="session.status=='TIE'"  class="btn btn-primary btn-sm tie-customized">TIE</button>
+                                <button type="button" *ngIf="session.status=='CLOSE'" (click)="newSession(session.id)" class="btn btn-primary btn-sm watch-customized"><img [src]="observe" width="20"/></button>
+                            </td>
+                            <td>
+                                <button type="button" name="delete"  (click)="delete(session)"class="btn btn-sm customized-delete">Delete</button>
+                            </td>  
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

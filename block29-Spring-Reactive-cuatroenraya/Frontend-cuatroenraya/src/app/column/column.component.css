@@ -1,0 +1,30 @@
+div {
+    padding: 30px;
+    border: 3px solid violet;
+    border-radius: 50px;
+}
+
+table{
+    background-color: fuchsia;
+    border-radius: 10px;
+}
+
+.custom-button {
+    width: 25px;
+    height: 25px; 
+    border-radius: 50%;
+    background-image: url('/assets/arrow48.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.rounded-table {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* Otros estilos si es necesario */
+}

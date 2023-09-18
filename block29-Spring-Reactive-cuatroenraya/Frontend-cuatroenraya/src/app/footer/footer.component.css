@@ -1,0 +1,30 @@
+footer {
+    background-color: black;
+    color: fuchsia;
+    padding: 1px 1px;
+    margin: 0;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer-text {
+    font-size: 10px;
+  }
+  

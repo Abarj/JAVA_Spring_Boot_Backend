@@ -1,0 +1,172 @@
+.custom-nav {
+    display: flex; /* Mostrar los elementos como una fila horizontal */
+    padding-left: 0; /* Eliminar el relleno izquierdo predeterminado de la lista */
+    margin-bottom: 0; /* Eliminar el margen inferior predeterminado de la lista */
+    list-style: none; /* Eliminar los marcadores de lista */
+    border-radius: 0.25rem; /* Bordes redondeados para los enlaces de las píldoras */
+    background-color: fuchsia; /* Color de fondo para la píldora activa */
+    color: #fff; /* Color de texto para la píldora activa */
+    
+}
+
+.custom-card-header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.custom-nav-item {
+    position: relative; /* Establece la posición del elemento */
+    display: block; /* Hace que los enlaces ocupen todo el ancho del elemento */
+    padding: 0.5rem 1rem; /* Ajusta el relleno interno de los enlaces */
+    color: #000; /* Color del texto para los enlaces */
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+    transition: color 0.15s ease-in-out; /* Agrega una transición suave para el cambio de color */
+    margin-left: 0;
+}
+  
+/* Si deseas aplicar estilos adicionales a los elementos activos o seleccionados: */
+.nav-item.active a.nav-link {
+    background-color: #007bff; /* Color de fondo para el elemento activo */
+    color: #fff; /* Color del texto para el elemento activo */
+}
+
+.custom-form-control {
+    display: block; /* Hace que el elemento sea un bloque y ocupe todo el ancho disponible */
+    width: 100%; /* Asigna un ancho del 100% para ocupar el espacio disponible */
+    padding: 0.375rem 0.75rem; /* Relleno interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+    color: #495057; /* Color del texto */
+    background-color: #fff; /* Color de fondo */
+    background-clip: padding-box; /* Evita que el fondo se extienda debajo del borde */
+    border: 1px solid #ced4da; /* Borde */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transiciones para el borde y la sombra */
+    margin-right: 0.5rem; /* Margen derecho de 0.5rem */
+    margin-left: 0.5rem; /* Margen izquierdo de 0.5rem */
+}
+
+.btn {
+    margin-right: 0.5rem; /* Margen derecho de 0.5rem */
+    margin-left: 0.5rem; /* Margen izquierdo de 0.5rem */
+    display: inline-block; /* Hace que el botón sea un elemento en línea */
+    font-weight: 400; /* Peso de fuente */
+    text-align: center; /* Alineación del texto al centro */
+    white-space: nowrap; /* Evita el desbordamiento de texto */
+    vertical-align: middle; /* Alineación vertical al medio */
+    user-select: none; /* Evita la selección de texto */
+    border: 1px solid transparent; /* Borde del botón */
+    padding: 0.375rem 0.75rem; /* Relleno interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transiciones suaves para varios estados */
+}
+
+.btn-success {
+    color: #000000; /* Color del texto */
+    background-color: greenyellow; /* Color de fondo para el botón de éxito */
+    border-color: greenyellow; /* Color del borde del botón de éxito */
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff; /* Cambio de color de texto al pasar el mouse o enfocar */
+  background-color: #218838; /* Cambio de color de fondo al pasar el mouse o enfocar */
+  border-color: #1e7e34; /* Cambio de color del borde al pasar el mouse o enfocar */
+}
+
+/* Estilos para .btn-warning */
+.btn-warning {
+    color: #212529; /* Color del texto */
+    background-color: #ffc107; /* Color de fondo para el botón de advertencia */
+    border-color: #ffc107; /* Color del borde del botón de advertencia */
+    margin-right: 0.5rem; /* Margen derecho de 0.5rem */
+    margin-left: 0.5rem; /* Margen izquierdo de 0.5rem */
+  }
+  
+  /* Estilos para .btn-warning:hover y .btn-warning:focus (cuando se pasa el mouse o se enfoca) */
+.btn-warning:hover, .btn-warning:focus {
+    color: #212529; /* Cambio de color de texto al pasar el mouse o enfocar */
+    background-color: #e0a800; /* Cambio de color de fondo al pasar el mouse o enfocar */
+    border-color: #d39e00; /* Cambio de color del borde al pasar el mouse o enfocar */
+}
+
+.card-body {
+    padding: 1.25rem; /* Ajuste del relleno interno del cuerpo de la tarjeta */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del elemento */
+    overflow-y: auto; /* Habilita la barra de desplazamiento vertical solo cuando es necesario */
+}
+
+/* Estilos para .list-group */
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+}
+  
+/* Estilos para .list-group-flush */
+.list-group-flush .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+
+/* Estilos para .list-group-item */
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px; /* Elimina el margen inferior para que los elementos de la lista se alineen correctamente */
+    background-color: #fff; /* Color de fondo predeterminado */
+    border: 1px solid rgba(0, 0, 0, 0.125); /* Borde con transparencia */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Estilos para .list-group-item-light */
+.list-group-item-light {
+    background-color: #fff; /* Fondo claro */
+}
+
+.card-footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.75rem 1.25rem; /* Ajuste del relleno interno del pie de tarjeta */
+    background-color: #fff; /* Color de fondo del pie de tarjeta */
+    border-top: 1px solid rgba(0, 0, 0, 0.125); /* Borde superior del pie de tarjeta */
+    border-radius: 0 0 5px 5px; /* Redondea solo las esquinas de abajo */
+  }
+  
+
+/* Estilos para .form-inline */
+.form-inline {
+    display: flex; /* Hace que los elementos del formulario se muestren en línea */
+    flex-flow: row wrap; /* Permite que los elementos se envuelvan automáticamente si no caben en la misma línea */
+    align-items: center; /* Alinea verticalmente los elementos del formulario al centro */
+}
+
+.form-inline .form-group {
+    margin-bottom: 0; /* Elimina el margen inferior predeterminado de los grupos de formulario */
+}
+
+.form-inline .form-control {
+    display: inline-block; /* Hace que los campos de entrada sean elementos en línea */
+    width: auto; /* Permite que los campos de entrada se ajusten automáticamente al contenido */
+    vertical-align: middle; /* Alinea verticalmente los campos de entrada al centro */
+}
+
+.form-inline .btn {
+    vertical-align: middle; /* Alinea verticalmente los botones al centro */
+}
+  
+  
+  
+  
+  
+
+  
+
+  

@@ -1,0 +1,15 @@
+<div id="goBack">
+    <button type="button" style="margin-left: 45px; margin-top: 10px; border-radius: 50%; padding: 8px 10px;" [routerLink]="['/session']"><img [src]="exit" width="30"/></button>
+</div>
+
+<div class="container-fluid" id="main-content" style="padding-bottom: 100px;">
+    <div class="container">
+        <h1 style="padding-top: 20px; margin-right: 75px; color: white;">Session ID: {{idBs}}</h1>
+        
+        <div class="row" style="display: flex; padding-right: 125px;">
+            <div class="col1"><app-column *ngFor="let column of columns" id="{{column}}" [movement]="column" [sessionId]="idBs"></app-column></div>
+            
+            <div class="col2"><app-chat [username]="username"></app-chat></div>
+        </div>
+    </div>
+</div>

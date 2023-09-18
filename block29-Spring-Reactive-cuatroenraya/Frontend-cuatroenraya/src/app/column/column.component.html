@@ -1,0 +1,11 @@
+<button class="custom-button" id="{{movement}}" (click)="addToken(movement)" [disabled]="this.pieces == 6"></button>
+
+<table>
+    <td class="customized">
+        <tr *ngFor= " let cell of cells">
+            <div id="{{cell.id}}" *ngIf="cell.bg === 'red'" style="background-color: rgb(255, 0, 51);"></div>
+            <div id="{{cell.id}}" *ngIf="cell.bg === 'yellow'" style="background-color: gold;"></div>
+            <div id="{{cell.id}}" *ngIf="cell.bg === 'black'" style="background-color: black;"></div>
+        </tr>
+    </td>
+</table>

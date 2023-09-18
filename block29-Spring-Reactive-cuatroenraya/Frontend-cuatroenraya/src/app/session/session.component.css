@@ -1,0 +1,207 @@
+.bg-image {
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+  
+.mask {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    padding-right: 19px;
+    padding-left: 19px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+.custom-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.card {
+            width: 100%;
+            margin: 20px auto;
+            background: rgb(212,29,235);
+            background: -moz-linear-gradient(323deg, rgba(212,29,235,1) 35%, rgba(0,212,255,1) 100%);
+            background: -webkit-linear-gradient(323deg, rgba(212,29,235,1) 35%, rgba(0,212,255,1) 100%);
+            background: linear-gradient(323deg, rgba(212,29,235,1) 35%, rgba(0,212,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d41deb",endColorstr="#00d4ff",GradientType=1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #ddc300;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: fuchsia;
+            color: black;        }
+
+        th:first-child {
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        th:last-child {
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        /* Alert message styling */
+        .alert {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        /* Add more specific styling if needed for elements inside the table */
+       /* Estilo para la tabla */
+.table-bordered {
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+    border: 1px solid #ccc; /* Borde de la tabla */
+    border-radius: 5px; /* Aplica border-radius a las esquinas de la tabla */
+}
+
+/* Estilo para las celdas (opcional) */
+.table-bordered th, .table-bordered td {
+    border: none; /* Elimina los bordes de las celdas */
+    padding: 10px; /* Añade relleno a las celdas si es necesario */
+}
+
+/* Estilo para las esquinas exteriores de la tabla */
+.table-bordered th:first-child {
+    border-top-left-radius: 5px; /* Redondea la esquina superior izquierda */
+}
+
+.table-bordered th:last-child {
+    border-top-right-radius: 5px; /* Redondea la esquina superior derecha */
+}
+
+.table-bordered td:first-child {
+    border-bottom-left-radius: 5px; /* Redondea la esquina inferior izquierda */
+}
+
+.table-bordered td:last-child {
+    border-bottom-right-radius: 5px; /* Redondea la esquina inferior derecha */
+}
+
+
+        /* Additional styles for special cases (e.g., status buttons) */
+        .btn-sm {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .customized {
+            background-color: fuchsia;
+            font-weight: bold;
+        }
+
+        /* Customize other elements as needed */
+        /* .date-format {
+            Add date formatting styles here.
+        } */
+
+.customized-delete {
+    background-color: fuchsia;
+    font-weight: bold;
+}
+
+.customized-delete:hover {
+    background-color: rgb(175, 10, 175);
+}
+
+.custom-alert-info{
+    background-color: rgb(255, 0, 111);
+}
+
+.winner-customized, .tie-customized {
+    background-color: gold;
+    color: #000;
+    font-weight: bold;
+}
+
+.customized-play {
+    background-color: #2FE3FE;
+    color: #000;
+    font-weight: bold;
+}
+
+.watch-customized{
+    background-color: greenyellow;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-top: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.watch-customized:hover {
+    background-color: rgb(103, 155, 0);
+}
+
+.customized-play:hover {
+    background-color: #0097af;
+}
