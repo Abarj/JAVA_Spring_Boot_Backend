@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Product Store</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            #products {
+              font-family: Arial, Helvetica, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+
+            #products td, #products th {
+              border: 1px solid #ddd;
+              padding: 8px;
+            }
+
+            #products tr:nth-child(even){background-color: #f2f2f2;}
+
+            #products tr:hover {background-color: #ddd;}
+
+            #products th {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              background-color: #04AA6D;
+              color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container my-5 ">
+            <h1 class="text-center">Product Store<br>(Spring Boot & Elasticsearch Application)<br/></h1>
+
+            <a th:href="@{/showNewProductForm}" class="btn btn-primary m-3"> Add Product </a>
+            <a href="/" class="btn btn-danger text-right">Go Home</a>
+
+            <table id="products" border="1" class="table table-striped table-responsive-md">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr th:each="productDocument : ${listProductDocuments}">
+                        <td th:text="${productDocument.id}"></td>
+                        <td th:text="${productDocument.name}"></td>
+                        <td th:text="${productDocument.description}"></td>
+                        <td th:text="${productDocument.price}"></td>
+                        <td>
+                            <a th:href="@{/showFormForUpdate/{id}(id=${productDocument.id})}" class="btn btn-success">Update</a>
+                            <a th:href="@{/deleteProduct/{id}(id=${productDocument.id})}" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
